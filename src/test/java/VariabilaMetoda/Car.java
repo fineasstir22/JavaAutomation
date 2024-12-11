@@ -36,7 +36,7 @@ public class Car {
     public void averageCalculationTest(){
 
         averageCalculation(8,10);
-        averageCalculation(5,10);
+        averageCalculation(6,10);
 
     }
 
