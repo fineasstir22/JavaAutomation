@@ -30,7 +30,7 @@ public class Student {
 
 
     @Test
-    public void prezentareStudent(){
+    public void prezentareStudent() {
 
         surname = "Stir";
         name = "Fineas";
@@ -52,9 +52,12 @@ public class Student {
         System.out.println("Student is graduated? " + isGraduated);
 
         calculMedie();
+        System.out.println(getSalary());
+
+        daysOfWeek(3);
     }
 
-    public void calculMedie(){
+    public void calculMedie() {
 
         Integer grade1 = 8;
         Integer grade2 = 9;
@@ -63,7 +66,43 @@ public class Student {
 
         System.out.println("Student average is: " + average);
 
-
     }
+
+    //metoda cu return
+    public Integer getSalary() {
+
+        Integer salary = 1000;
+        return salary;
+    }
+
+    //switch case example
+    public void daysOfWeek(Integer days) {
+        switch (days) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Out of days");
+        }
+    }
+
 
 }
